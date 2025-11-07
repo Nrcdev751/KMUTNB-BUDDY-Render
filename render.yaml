@@ -1,0 +1,20 @@
+services:
+  # Web Service
+  - type: web
+    name: kmutnb-buddy
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn line_his2:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+    autoDeploy: true
+
+  # Background Worker (if needed for any background tasks)
+  # - type: worker
+  #   name: kmutnb-buddy-worker
+  #   env: python
+  #   plan: free
+  #   buildCommand: pip install -r requirements.txt
+  #   startCommand: python worker.py

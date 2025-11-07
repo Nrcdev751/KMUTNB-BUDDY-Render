@@ -1,0 +1,10 @@
+flask==2.3.3
+line-bot-sdk==3.7.0
+google-generativeai==0.7.2
+langchain==0.1.0
+langchain-google-genai==1.0.1
+langchain-community==0.0.13
+chromadb==0.4.22
+python-dotenv==1.0.0
+pandas==2.2.2
+gunicorn==21.2.0
