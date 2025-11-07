@@ -8,7 +8,7 @@ services:
     startCommand: gunicorn line_his2:app
     envVars:
       - key: PYTHON_VERSION
-        value: 3.9.0
+        value: 3.13.5
     autoDeploy: true
 
   # Background Worker (if needed for any background tasks)
